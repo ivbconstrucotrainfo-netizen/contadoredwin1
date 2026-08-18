@@ -2,7 +2,11 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0B1525">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <title>A&E Asesores Contables y Tributarios</title>
     <meta name="description" content="Asesoría contable y tributaria para empresas y personas que buscan tomar mejores decisiones, cumplir sus obligaciones y fortalecer sus finanzas.">
     
@@ -61,10 +65,8 @@
     <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-[#07162C]/90 backdrop-blur-xl shadow-sm py-4 border-b border-white/10">
         <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-3">
-                <div class="text-2xl font-heading font-bold text-dark tracking-wide">
-                    <span class="text-primary">A&E</span> ASESORES
-                </div>
+            <a href="#" class="flex items-center">
+                <img src="img/logo.png" alt="A&E Asesores Contables y Tributarios" class="h-14 w-auto object-contain" style="filter: brightness(0) invert(1);">
             </a>
 
             <!-- Desktop Menu -->
@@ -121,8 +123,19 @@
                     <a href="https://wa.me/573208097413?text=Hola,%20estoy%20interesado(a)%20en%20conocer%20los%20servicios%20de%20A%26E%20Asesores%20Contables%20y%20Tributarios." target="_blank" class="inline-flex items-center justify-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg reveal">
                         Solicitar asesoría
                     </a>
-                    <a href="#servicios" class="inline-flex items-center justify-center bg-transparent border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors reveal">
+                    <a href="#contacto" class="inline-flex items-center justify-center bg-transparent border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors reveal">
                         Conocer nuestros servicios
+                        <style>.service-card { padding: 1.5rem; }
+@media (max-width: 640px) {
+  .service-card { padding: 1rem; }
+}
+/* Ensure service cards take full width on small screens */
+@media (max-width: 640px) {
+  .grid.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3 > div {
+    grid-column: span 1 / span 1;
+    width: 100%;
+  }
+}</style>
                     </a>
                 </div>
             </div>
@@ -177,7 +190,7 @@
     <!-- Nosotros Section -->
     <section id="nosotros" class="py-24 bg-[#121C2C] relative reveal">
         <div class="container mx-auto px-6 lg:px-12">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="grid md:grid-cols-2 gap-8 sm:gap-4 items-center">
                 <div class="order-2 md:order-1 relative">
                     <div class="absolute -inset-4 bg-[#1E2D42] rounded-2xl transform -rotate-3 z-0"></div>
                     <div class="relative z-10 bg-[#1A2840] p-10 rounded-2xl shadow-xl border border-white/10">
@@ -219,7 +232,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 reveal">
                 <!-- Service Card 1 -->
                 <div class="bg-[#1A2840] p-8 rounded-2xl shadow-sm border border-white/10 card-hover flex flex-col h-full reveal">
                     <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
